@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work 23.03.2022 sorting goods</title>
+
+    <link rel="stylesheet" href="./style_css_1.css">
+    <!-- Home work 23.03.2022 sorting goods -->
+</head>
+
+<body>
+    <div class="menu">
+        <div class="menuButton">
+            <input type="text" name="name by sort" id="inp" class="pole"></input>
+            <br>
+            <button class="sc" id="btnSelect" onclick="sort()">Select</button>
+            <button class="sc" id="btnClear" onclick="clearon()">Сlear all</button>
+            <button class="sc" id="allProds">All prod.s</button>
+        </div>
+        <nav>
+            <ul class="menuProd">
+                <li class="accordion">ТИП ТОВАРУ
+                    <ul class="content show">
+                        <li class="name_Prods" data-name="взуття">взуття</li>
+                        <li class="name_Prods" data-name="одяг">одяг</li>
+                    </ul>
+                </li>
+                <li class="accordion">КАТЕГОРІЇ ТОВАРУ
+                    <ul class="content show">
+                        <li class="name_Prods" data-name="босоніжки">босоніжки</li>
+                        <li class="name_Prods" data-name="джинси">джинси</li>
+                        <li class="name_Prods" data-name="куртка">куртка</li>
+                        <li class="name_Prods" data-name="костюм">костюм спорт</li>
+                        <li class="name_Prods" data-name="кросівки">кросівки</li>
+                        <li class="name_Prods" data-name="туфлі">туфлі</li>
+                        <li class="name_Prods" data-name="черевики">черевики</li>
+                        <li class="name_Prods" data-name="чоботи">чоботи</li>
+                        <li class="name_Prods" data-name="футболка">футболка</li>
+                        <li class="name_Prods" data-name="шорти">шорти</li>
+                    </ul>
+                </li>
+                <li class="accordion">СЕЗОНИ
+                    <ul class="content show">
+                        <li class="name_Prods" data-name="літо">літо</li>
+                        <li class="name_Prods" data-name="осінь">осінь</li>
+                        <li class="name_Prods" data-name="зима">зима</li>
+                    </ul>
+                </li>
+                <li class="accordion">СТАТЬ
+                    <ul class="content show">
+                        <li class="name_Prods" data-name="жіночі">жіночі</li>
+                        <li class="name_Prods" data-name="чоловічі">чоловічі</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <div class="goods" id="lot">
+        <ul id="lot1">
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="./array_dat1.js"></script>
+    <script type="text/javascript" src="./script download new array_1.js"></script>
+
+</body>
+
+</html>
