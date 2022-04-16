@@ -28,10 +28,10 @@ function sort() {
             poda[i].style.display = 'none';
         }
         if (vvod !== '' &&
-            vvod == products[i].type ||
-            vvod == products[i].category ||
-            vvod == products[i].season ||
-            vvod == products[i].sex) {
+            vvod === products[i].type ||
+            vvod === products[i].category ||
+            vvod === products[i].season ||
+            vvod === products[i].sex) {
             document.getElementById(`${products[i].id}`).style.display = '';
         }
     }
@@ -95,10 +95,10 @@ document.querySelectorAll(".name_Prods")
             products.forEach((e, i) => {
                 const poda = document.querySelectorAll(".productPlus");
                 poda[i].style.display = 'none';
-                if (namesort == products[i].type ||
-                    namesort == products[i].category ||
-                    namesort == products[i].season ||
-                    namesort == products[i].sex) {
+                if (namesort === products[i].type ||
+                    namesort === products[i].category ||
+                    namesort === products[i].season ||
+                    namesort === products[i].sex) {
                     document.getElementById(`${products[i].id}`).style.display = '';
                 }
             });
