@@ -88,9 +88,9 @@ function sort() {
 // ---------------------  ACCORDION  ---------------------
 // -------  Sorting block mune accordion (works with method 1)  --------
 document.querySelectorAll(".name_Prods")
-    .forEach((elem) => {
-        elem.addEventListener('click', () => {
-            namesort = elem.getAttribute('data-name');
+    .addEventListener('click', event => {
+       if (event.target.className === 'name_Prods') {
+           namesort = event.target.getAttribute('data-name');
             output();
             products.forEach((e, i) => {
                 const poda = document.querySelectorAll(".productPlus");
