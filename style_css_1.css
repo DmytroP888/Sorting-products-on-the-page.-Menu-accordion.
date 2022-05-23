@@ -62,6 +62,10 @@ li {
 
 .menu {
     display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: stretch;
 }
 
 nav {
@@ -164,4 +168,102 @@ nav {
     color: #00ff00;
     border-radius: 5px;
     cursor: pointer;
+}
+
+
+/* --------------------------------------------------- */
+
+.select {
+    background-color: #ffe1e1;
+}
+
+
+/* --------------------  Form modal ------------------ */
+
+.boxModal {
+    padding: 15px;
+    width: max-content;
+    height: auto;
+    background-color: #607d8b;
+    border: solid 2px #3dd0e0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 5;
+    position: relative;
+    margin: 0 auto;
+    display: none;
+}
+
+form {
+    width: fit-content;
+}
+
+.inputModal {
+    text-align-last: justify;
+}
+
+.radioModal {
+    padding: 5px;
+    margin: 0;
+}
+
+p {
+    -webkit-text-stroke-width: thin;
+}
+
+.inputModalButton {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+textarea {
+    max-width: 300px;
+    max-height: 220px;
+    min-width: 165px;
+    min-height: 80px;
+    text-align-last: left;
+}
+
+.addStart {
+    /* margin-top: 2px; */
+    margin-left: 275px;
+    width: min-content;
+    height: min-content;
+    background-color: #14d580;
+    border-radius: 5px;
+}
+
+.open {
+    display: block;
+}
+
+/* -------- valid inpet form --------- */
+
+.input {
+    text-align-last: left;
+}
+
+input:invalid {
+    border: 2px dashed red;
+    text-align-last: left;
+}
+
+input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+    text-align-last: left;
+}
+
+input:valid {
+    border: 1px solid black;
+    text-align-last: left;
+}
+
+.formInputRed {
+    background-image: linear-gradient(to right, rgb(238, 199, 205), rgb(178, 238, 178));
+    border: 6px solid red;
 }
